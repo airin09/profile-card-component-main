@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: papayawhip;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 150px 150px auto;
+    background-color: hotpink;
+    width: 350px;
+    justify-self: center;
+}
+
+.bg-image {
+    grid-column: span 3;
+    border-radius: 20px 20px 0 0;
+}
+
+.personal-data {
+    background-color: greenyellow;
+    grid-column: span 3;
+}
+
+.stats {
+    background-color: green;
+}
