@@ -8,40 +8,56 @@
   
   <link rel="stylesheet" href="styles.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
+<div class="background">
+  <img class="bg-1" src="images/bg-pattern-top.svg" alt="">
+  <img class="bg-2" src="images/bg-pattern-bottom.svg" alt="">
+</div>
+
  <div class="container">
-    <div class="bg-image">
-      <img src="images/bg-pattern-card.svg" alt="bg-pattern-card">
-    </div>
-    <div class="profile-image">
-      <img src="images/image-victor.jpg" alt="profile-image">
-    </div>
-    <div class="personal-data">
-      Victor Crest
-      26
-      London
-    </div>
-    <div class="stats followers">
-      80K
-      Followers
-    </div>
-    <div class="stats likes">
-      803K
-      Likes
-    </div>
-    <div class="stats photos">
-      1.4K
-      Photos
-    </div>
+  <div class="user-profile-image"></div>
+
+  <div class="background-image"></div>
+
+    <header class="card-header">
+      <div class="personal-data">
+        <span class="username">Victor Crest</span>
+        <span class="user-age">26</span>
+      </div>
+      <div class="user-location">London</div>
   
-   </div>
+    </header>
+
+    <section class="about-section">
+      <div class="about-item">
+          <div class="item-value">80K</div>
+          <div class="item-label">Followers</div>
+      </div>
+      <div class="about-item">
+          <div class="item-value">803K</div>
+          <div class="item-label">Likes</div>
+      </div>
+      <div class="about-item">
+          <div class="item-value">1.4K</div>
+          <div class="item-label">Photos</div>
+      </div>
+    </section>
+ </div>
+</body>
+
+<footer class="attribution">
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">airin &hearts;</a>.
+    Coded by <a href="https://github.com/airin09">airin &hearts;</a>.
   </div>
-</body>
+</footer>
 </html>

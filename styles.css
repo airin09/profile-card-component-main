@@ -4,28 +4,131 @@
 }
 
 body {
-    background-color: papayawhip;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.bg-1, .bg-2 {
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    
+}
+
+.bg-1 {
+    top: -600px;
+    left: -125px;
+
+}
+
+.bg-2 {
+    right: -125px;
+    bottom: -600px;
+
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 150px 150px auto;
-    background-color: hotpink;
-    width: 350px;
-    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    height: 375px;
+    width: 325px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
 }
 
-.bg-image {
-    grid-column: span 3;
-    border-radius: 20px 20px 0 0;
+
+.background-image {
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    width: 325px;
+    height: 140px;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.user-profile-image {
+    background-image: url(images/image-victor.jpg);
+    background-size:cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 115px;
+    border: 5px solid #FFFFFF;
+
+}
+
+.card-header {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 145px;
+    line-height: 1.75;
 }
 
 .personal-data {
-    background-color: greenyellow;
-    grid-column: span 3;
+    margin-top: 50px;
 }
 
-.stats {
-    background-color: green;
+.username {
+    color: hsl(229, 23%, 23%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
 }
+.user-age{
+    color: hsl(0, 0%, 59%);
+}
+
+.user-location {
+    font-size: 14px;
+    color: hsl(0, 0%, 59%);
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    height: 90px;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: hsl(229, 23%, 23%);
+    border-top: 1px solid hsl(0, 0%, 59%, 0.25);
+    padding: 20px;
+    line-height: 1.75;
+}
+
+.item-value {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.item-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.attribution {
+    justify-content: center;
+    font-size: 13px;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+.attribution a {
+    color: rgb(211, 211, 211);
+}
+
