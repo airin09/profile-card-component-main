@@ -130,5 +130,6 @@ body {
 
 .attribution a {
     color: rgb(211, 211, 211);
+    cursor: pointer;
 }
 
